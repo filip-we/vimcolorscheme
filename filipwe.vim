@@ -1,14 +1,11 @@
-"Updated 2020-09-09
+"Updated 2021-03-07
 set background=light
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
-
 let g:colors_name = "filipwe"
-
-
 
 highlight Search        guifg=Black
 highlight Visual        guifg=Black
