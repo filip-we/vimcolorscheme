@@ -1,40 +1,51 @@
-"Updated 2021-03-07
+"Updated 2020-09-28
 set background=light
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
+
 let g:colors_name = "filipwe"
 
-highlight Search        guifg=Black
-highlight Visual        guifg=Black
-highlight Cursor        guibg=#5f80e3
-highlight StatusLine    guibg=#5f80e3 guifg=#000000 gui=None
-highlight StatusLineNC  guibg=#999999 guifg=#000000 gui=None
-
-highlight Todo          guibg=#278001 guifg=#eeeeee gui=None
-highlight EndOfBuffer   guifg=#f558be gui=None
-highlight NonText       guifg=#f558be gui=None
-
-highlight Normal        guifg=#444444 guibg=#eeeeee
-highlight Comment       guifg=#999999
-highlight String        guifg=#278001
 
 
-highlight Statement     guifg=#d63c44 gui=NONE"def, class, with...
-highlight Function      guifg=#5f80e3 gui=NONE "#5fe37e #698060 Function names and types
+highlight Search                        guifg=Black                         ctermfg=Black
+highlight Visual                        guifg=Black                         ctermfg=Black
+highlight Cursor        guibg=#5f80e3                           ctermbg=32
+highlight StatusLine    guibg=#5f80e3   guifg=#000000 gui=None  ctermbg=32  ctermfg=0
+highlight StatusLineNC  guibg=#999999   guifg=#000000 gui=None  ctermbg=249 ctermfg=0
 
-highlight Conditional   guifg=#d63c44 gui=NONE
-highlight Operator      guifg=#d63c44
-highlight Repeat        guifg=#d63c44 gui=NONE"Loops
-highlight Special       guifg=#f558be "00ff77 "?
+highlight Todo          guibg=#278001   guifg=#eeeeee gui=None  ctermbg=34  ctermfg=255
+highlight EndOfBuffer                   guifg=#f558be gui=None              ctermfg=165
+highlight NonText                       guifg=#f558be gui=None              ctermfg=165
 
-highlight Exception     guifg=#d63c44 "try, catch
-highlight Structure     guifg=#ff8000 gui=NONE"Exceptions "
+highlight Normal        guibg=#eeeeee   guifg=#444444           ctermbg=255 ctermfg=238
+highlight Comment                       guifg=#999999                       ctermfg=244
+highlight String                        guifg=#278001                       ctermfg=34
 
-highlight Error         guifg=#00ff77"?
+highlight Label                         guifg=#d63c44 gui=NONE              ctermfg=160
+"def, class, with...
+highlight Statement                     guifg=#d63c44 gui=NONE              ctermfg=160
+ "#5fe37e #698060 Function names and types
+highlight Function                      guifg=#5f80e3 gui=NONE              ctermfg=32
+highlight Type                          guifg=#5f80e3 gui=NONE              ctermfg=32
 
-highlight Include       guifg=#ff8000 "Import
-highlight Type          guifg=Black
-highlight Number        guifg=#921fbf " 921fbf
+highlight Conditional                   guifg=#d63c44 gui=NONE              ctermfg=160
+highlight Operator                      guifg=#d63c44                       ctermfg=160
+"Iterations
+highlight Repeat                        guifg=#d63c44 gui=NONE              ctermfg=160
+highlight Special                       guifg=#f558be                       ctermfg=165
+
+"Try catch
+highlight Exception                     guifg=#d63c44                       ctermfg=160
+"Exceptions
+highlight Structure                     guifg=#ff8000 gui=NONE              ctermfg=208"Orange
+
+highlight Error                         guifg=#00ff77                       ctermfg=48
+
+"Import
+highlight Include                       guifg=#ff8000                       ctermfg=208
+highlight Number                        guifg=#921fbf                       ctermfg=92
+
+
