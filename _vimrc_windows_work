@@ -1,0 +1,83 @@
+syntax on
+"set background=dark
+
+
+" ---- Minimal configuration:
+set smartindent   " Do smart autoindenting when starting a new line
+set shiftwidth=4  " Set number of spaces per auto indentation
+set expandtab     " When using <Tab>, put spaces instead of a <tab> character
+
+" ---- Good to have for consistency
+set tabstop=4   " Number of spaces that a <Tab> in the file counts for
+set smarttab    " At <Tab> at beginning line inserts spaces set in shiftwidth
+
+" ---- Bonus for proving the setting
+" Displays '-' for trailing space, '>-' for tabs and '_' for non breakable space
+set listchars=tab:>-,trail:-,nbsp:_
+set list
+
+" Windows things
+set guioptions -=T
+set ruler
+
+if has("gui_running")
+  if has("gui_gtk2") || has("gui_gtk3")
+    set guifont=Lucida\ Console\ 10
+  elseif has("gui_photon")
+    set guifont=Lucida\ Console:s10
+  elseif has("gui_kde")
+    set guifont=Lucida\ Console/11/-1/5/50/0/0/0/1/0
+  elseif has("x11")
+    set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+  else
+    set guifont=Lucida_Console:h10:cDEFAULT
+  endif
+endif
+
+"hi Normal guifg=white guibg=black
+"set t_Co=256   " This is may or may not needed.
+
+colorscheme PaperColor
+
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default.light': {
+  \       'override' : {
+        \       'color00' : ['#eeeeee', '234'],
+        \       'color01' : ['#af005f', '125'],
+        \       'color02' : ['#5faf00', '70'],
+        \       'color03' : ['#ff8000', '179'],
+        \       'color04' : ['#5fafd7', '74'],
+        \       'color05' : ['#808080', '244'],
+        \       'color06' : ['#d7875f', '173'],
+        \       'color07' : ['#444444', '252'],
+        \       'color08' : ['#585858', '240'],
+        \       'color09' : ['#af87d7', '71'],
+        \       'color10' : ['#d70000', '148'],
+        \       'color11' : ['#008700', '140'],
+        \       'color12' : ['#ffaf00', '214'],
+        \       'color13' : ['#d70087', '205'],
+        \       'color14' : ['#00afaf', '37'],
+        \       'color15' : ['#5f8787', '66']
+        \       }
+  \     }
+  \   }
+  \ }
+set background=light
+
+"01 logic
+"02 
+"03 string fc760a
+"04 function
+"05 grey
+"06 dark blue
+"07 normal text
+
+"09 import
+"10 def
+"11 if else
+"12
+"13 integers
+"14 ??blue
+"15 function name
+
