@@ -1,6 +1,9 @@
 " VIM-rc-file primarily for Unix-like OS:es
 " By filipwe
-" Last updated 2021-03-07
+" Last updated 2021-10-13
+
+" Common settings
+set noswapfile
 
 " Sets indents to four spaces, as well as converting tabs to 4 spaces
 set smartindent
@@ -31,4 +34,3 @@ augroup asm6502
     au!
     autocmd BufNewFile,BufRead *.s set syntax=asm6502
 augroup END
-
