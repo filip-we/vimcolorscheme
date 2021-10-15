@@ -1,6 +1,6 @@
 " VIM-rc-file primarily for Unix-like OS:es
 " By filipwe
-" Last updated 2021-10-13
+" Last updated 2021-10-15
 
 " Common settings
 set noswapfile
@@ -25,9 +25,6 @@ set ruler
 set t_Co=256
 syntax on
 colorscheme filipwe
-
-" Bg-color. Should be after loading colorscheme
-set background=light
 
 " Syntax for asm6502
 augroup asm6502
