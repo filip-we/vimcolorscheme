@@ -1,4 +1,4 @@
-"Updated 2020-09-28
+"Updated 2021-10-15
 set background=light
 hi clear
 if exists("syntax_on")
@@ -7,15 +7,19 @@ endif
 
 let g:colors_name = "filipwe"
 
-highlight Search                        guifg=Black                         ctermfg=Black
-highlight Visual                        guifg=Black                         ctermfg=Black
-highlight Cursor        guibg=#5f80e3                           ctermbg=32
+" Cursor (not working on Windows at least)
+highlight Cursor        guibg=#f558be   guifg=#278001           ctermbg=165 ctermfg=34      " Pink and green, no effect
+highlight iCursor       guibg=#f558be   guifg=#278001           ctermbg=165 ctermfg=34      " Pink and green, no effect
+highlight CursorIM      guibg=#f558be   guifg=#278001           ctermbg=165 ctermfg=34      " Pink and green, no effect
+
+highlight Search        guibg=#5f80e3   guifg=#dadada           ctermbg=32  ctermfg=253
+highlight Visual                        guifg=#5f80e3                       ctermfg=32
 highlight StatusLine    guibg=#eeeeee   guifg=#5f80e3 gui=None  ctermbg=255 ctermfg=32
 highlight StatusLineNC  guibg=#eeeeee   guifg=#444444 gui=None  ctermbg=255 ctermfg=238
 
 highlight Todo          guibg=#278001   guifg=#eeeeee gui=None  ctermbg=34  ctermfg=255     " 34: green
-highlight EndOfBuffer                   guifg=#f558be gui=None              ctermfg=165     " 165: pink
-highlight NonText                       guifg=#f558be gui=None              ctermfg=165
+highlight EndOfBuffer                   guifg=#0000d7 gui=None              ctermfg=20      " 20: dark blue
+highlight NonText                       guifg=#0000d7 gui=None              ctermfg=20
 
 highlight Normal        guibg=#eeeeee   guifg=#444444           ctermbg=255 ctermfg=238     " 238: dark grey
 highlight Comment                       guifg=#999999                       ctermfg=244     " 244: light grey
