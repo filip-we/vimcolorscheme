@@ -1,4 +1,4 @@
-"Updated 2021-10-25
+"Updated 2021-10-28
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -14,10 +14,13 @@ if &background == 'light'
     " Cursor (not working on Windows at least)
 let palette = {
     \   'cursor':           'guifg=#278001 ctermfg=34  guibg=#f558be ctermbg=165',
-    \   'search':           'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
-    \   'visual':           'guifg=#5f80e3 ctermfg=32',
+    \   'gui-fg-1':         'guifg=#5f80e3 ctermfg=32',
+    \   'gui-bg-1':           '                          guibg=#5f80e3 ctermbg=32',
+    \
     \   'status-line':      'guifg=#5f80e3 ctermfg=32  guibg=#eeeeee ctermbg=255',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#eeeeee ctermbg=255',
+    \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
+    \
     \   'todo':             'guifg=#eeeeee ctermfg=255 guibg=#278001 ctermbg=34',
     \   'non-text':         'guifg=#0000d7 ctermfg=20',
     \
@@ -30,7 +33,7 @@ let palette = {
     \   'fn-names' :        'guifg=#d63c44 ctermfg=32',
     \   'decorator' :       'guifg=#ff8000 ctermfg=208',
     \
-    \   'special_chars':    'guifg=#f558be ctermfg=165',
+    \   'special-chars':    'guifg=#f558be ctermfg=165',
     \   'exceptions':       'guifg=#ff8000 ctermfg=208',
     \   'unknown1':         'guifg=#00ff77 ctermfg=48',
     \   'import':           'guifg=#ff8000 ctermfg=208',
@@ -41,10 +44,13 @@ el
     " ---------------------------------------------------------------------------------------------------------
 let palette = {
     \   'cursor':           'guifg=#278001 ctermfg=34  guibg=#f558be ctermbg=165',
-    \   'search':           'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
-    \   'visual':           '                          guibg=#005f5f ctermbg=23',
+    \   'gui-fg-1':        'guifg=#005f5f ctermfg=23',
+    \   'gui-bg-1':           '                          guibg=#005f5f ctermbg=23',
+    \
     \   'status-line':      'guifg=#5f80e3 ctermfg=66  guibg=#dadada ctermbg=253',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#dadada ctermbg=253',
+    \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
+    \
     \   'todo':             'guifg=#999999 ctermfg=238 guibg=#87af00 ctermbg=106',
     \   'non-text':         'guifg=#5f8787 ctermfg=66',
     \
@@ -57,7 +63,7 @@ let palette = {
     \   'fn-names' :        'guifg=#5f80e3 ctermfg=32',
     \   'decorator' :       'guifg=#ff8000 ctermfg=208',
     \
-    \   'special_chars':    'guifg=#875fd7 ctermfg=98',
+    \   'special-chars':    'guifg=#875fd7 ctermfg=98',
     \   'exceptions':       'guifg=#ff8000 ctermfg=208',
     \   'unknown1':         'guifg=#00ff77 ctermfg=48',
     \   'import':           'guifg=#ff8000 ctermfg=208',
@@ -67,18 +73,32 @@ endif
 exec 'hi  Cursor        '.palette['cursor']
 exec 'hi iCursor        '.palette['cursor']
 exec 'hi CursorIM       '.palette['cursor']
+exec 'hi TermCursor     '.palette['cursor']
+exec 'hi TermCursorNC   '.palette['cursor']
 
-exec 'hi Search         '.palette['search']
-exec 'hi Visual         '.palette['visual']
+exec 'hi Directory      '.palette['gui-fg-1']
+exec 'hi Pmenu          '.palette['menu']
+
+exec 'hi Search         '.palette['gui-bg-1']
+exec 'hi Visual         '.palette['gui-bg-1']
 exec 'hi StatusLine     '.palette['status-line']
 exec 'hi StatusLineNC   '.palette['status-line-nc']
+exec 'hi VertSplit      '.palette['status-line']
+exec 'hi LineNr         '.palette['gui-fg-1']
+exec 'hi MatchParen     '.palette['gui-bg-1']
 
 
 exec 'hi Todo           '.palette['todo']
 exec 'hi EndOfBuffer    '.palette['non-text']
 exec 'hi NonText        '.palette['non-text']
+exec 'hi SpecialKey     '.palette['special-chars']
+exec 'hi TabLine        '.palette['decorator']
+exec 'hi TabLineFill    '.palette['decorator']
+exec 'hi TabLineSel     '.palette['decorator']
 
 exec 'hi Normal         '.palette['normal']
+exec 'hi NormalFloat    '.palette['normal']
+exec 'hi NormalNC       '.palette['normal']
 exec 'hi Comment        '.palette['comment']
 exec 'hi String         '.palette['string']
 exec 'hi Number         '.palette['number']
@@ -98,7 +118,7 @@ exec 'hi Define         '.palette['decorator']
 
 exec 'hi Structure      '.palette['exceptions']
 
-exec 'hi Special        '.palette['special_chars']
+exec 'hi Special        '.palette['special-chars']
 
 exec 'hi Error          '.palette['unknown1']
 
@@ -147,4 +167,3 @@ exec 'hi Include        '.palette['import']
     ""Import
     "highlight Include                     guifg=#ff8000             ctermfg=208
     "highlight Number                      guifg=#921fbf             ctermfg=92      " 92: dark violet
-
