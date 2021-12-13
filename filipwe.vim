@@ -20,6 +20,9 @@ let palette = {
     \   'status-line':      'guifg=#5f80e3 ctermfg=32  guibg=#eeeeee ctermbg=255',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#eeeeee ctermbg=255',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
+    \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None cterm=None',
+    \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
+    \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#5f80e3 ctermbg=32',
     \
     \   'todo':             'guifg=#eeeeee ctermfg=255 guibg=#278001 ctermbg=34',
     \   'non-text':         'guifg=#0000d7 ctermfg=20',
@@ -50,6 +53,9 @@ let palette = {
     \   'status-line':      'guifg=#5f80e3 ctermfg=66  guibg=#dadada ctermbg=253',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#dadada ctermbg=253',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
+    \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None      cterm=None',
+    \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66 ',
+    \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#005f5f ctermbg=23',
     \
     \   'todo':             'guifg=#999999 ctermfg=238 guibg=#87af00 ctermbg=106',
     \   'non-text':         'guifg=#5f8787 ctermfg=66',
@@ -92,9 +98,9 @@ exec 'hi Todo           '.palette['todo']
 exec 'hi EndOfBuffer    '.palette['non-text']
 exec 'hi NonText        '.palette['non-text']
 exec 'hi SpecialKey     '.palette['special-chars']
-exec 'hi TabLine        '.palette['decorator']
-exec 'hi TabLineFill    '.palette['decorator']
-exec 'hi TabLineSel     '.palette['decorator']
+exec 'hi TabLineSel     '.palette['tab-sel']
+exec 'hi TabLineFill    '.palette['tab-nc']
+exec 'hi TabLine        '.palette['tab']
 
 exec 'hi Normal         '.palette['normal']
 exec 'hi NormalFloat    '.palette['normal']
