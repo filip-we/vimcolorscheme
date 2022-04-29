@@ -1,6 +1,7 @@
+filip@silverfisken:~/git/framtid-app$ cat ~/.vimrc 
 " VIM-rc-file primarily for Unix-like OS:es
 " By filipwe
-" Last updated 2021-10-15
+" Last updated 2022-04-29
 
 " Common settings
 set noswapfile
@@ -24,6 +25,7 @@ set ruler
 " Colors and colorscheme
 set t_Co=256
 syntax on
+set hlsearch
 colorscheme filipwe
 
 " Syntax for asm6502
