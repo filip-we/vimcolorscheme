@@ -1,4 +1,4 @@
-"Updated 2021-10-28
+"Updated 2022-04-29
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -15,11 +15,12 @@ if &background == 'light'
 let palette = {
     \   'cursor':           'guifg=#278001 ctermfg=34  guibg=#f558be ctermbg=165',
     \   'gui-fg-1':         'guifg=#5f80e3 ctermfg=32',
-    \   'gui-bg-1':           '                          guibg=#5f80e3 ctermbg=32',
+    \   'gui-bg-1':         '                          guibg=#5f80e3 ctermbg=32',
     \
     \   'status-line':      'guifg=#5f80e3 ctermfg=32  guibg=#eeeeee ctermbg=255',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#eeeeee ctermbg=255',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
+    \   'search':           '                          guibg=#5f80e3 ctermbg=32',
     \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None cterm=None',
     \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
     \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#5f80e3 ctermbg=32',
@@ -47,12 +48,13 @@ el
     " ---------------------------------------------------------------------------------------------------------
 let palette = {
     \   'cursor':           'guifg=#278001 ctermfg=34  guibg=#f558be ctermbg=165',
-    \   'gui-fg-1':        'guifg=#005f5f ctermfg=23',
-    \   'gui-bg-1':           '                          guibg=#005f5f ctermbg=23',
+    \   'gui-fg-1':         'guifg=#005f5f ctermfg=23',
+    \   'gui-bg-1':         '                          guibg=#005f5f ctermbg=23',
     \
     \   'status-line':      'guifg=#5f80e3 ctermfg=66  guibg=#dadada ctermbg=253',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#dadada ctermbg=253',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
+    \   'search':           '                          guibg=#5f80e3 ctermbg=66',
     \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None      cterm=None',
     \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66 ',
     \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#005f5f ctermbg=23',
@@ -85,7 +87,7 @@ exec 'hi TermCursorNC   '.palette['cursor']
 exec 'hi Directory      '.palette['gui-fg-1']
 exec 'hi Pmenu          '.palette['menu']
 
-exec 'hi Search         '.palette['gui-bg-1']
+exec 'hi Search         '.palette['search']
 exec 'hi Visual         '.palette['gui-bg-1']
 exec 'hi StatusLine     '.palette['status-line']
 exec 'hi StatusLineNC   '.palette['status-line-nc']
