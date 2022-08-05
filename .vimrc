@@ -1,7 +1,6 @@
-filip@silverfisken:~/git/framtid-app$ cat ~/.vimrc 
 " VIM-rc-file primarily for Unix-like OS:es
 " By filipwe
-" Last updated 2022-04-29
+" Last updated 2022-08-05
 
 " Common settings
 set noswapfile
@@ -33,3 +32,6 @@ augroup asm6502
     au!
     autocmd BufNewFile,BufRead *.s set syntax=asm6502
 augroup END
+
+" Optimizing searches in repos.
+set wildignore=*/.git/*,*/.venv/*,*/__pycache__/*
