@@ -1,4 +1,4 @@
-"Updated 2022-04-29
+"Updated 2022-08-05
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -20,7 +20,7 @@ let palette = {
     \   'status-line':      'guifg=#5f80e3 ctermfg=32  guibg=#eeeeee ctermbg=255',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#eeeeee ctermbg=255',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=32',
-    \   'search':           '                          guibg=#5f80e3 ctermbg=32',
+    \   'search':           '                          guibg=#87d7d7 ctermbg=116',
     \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None cterm=None',
     \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
     \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#5f80e3 ctermbg=32',
@@ -54,7 +54,7 @@ let palette = {
     \   'status-line':      'guifg=#5f80e3 ctermfg=66  guibg=#dadada ctermbg=253',
     \   'status-line-nc':   'guifg=#444444 ctermfg=238 guibg=#dadada ctermbg=253',
     \   'menu':             'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66',
-    \   'search':           '                          guibg=#5f80e3 ctermbg=66',
+    \   'search':           '                          guibg=#5f8787 ctermbg=66',
     \   'tab':              'guifg=#dadada ctermfg=253 guibg=#585858 ctermbg=240 term=None      cterm=None',
     \   'tab-sel':          'guifg=#dadada ctermfg=253 guibg=#5f80e3 ctermbg=66 ',
     \   'tab-nc':           'guifg=#585858 ctermfg=240 guibg=#005f5f ctermbg=23',
